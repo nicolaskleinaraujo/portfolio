@@ -1,8 +1,11 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500&family=Press+Start+2P&display=swap');
 
+
+/* Variaveis */
 :root {
     --fontTitle: 'Press Start 2P', sans-serif;
+    --fontBody: 'Lora', serif;
 
     --color1: #212226;
     --color2: #3E4F59;
@@ -11,11 +14,21 @@
     --color5: #B5D991;
 }
 
+/* Estilização Global e nas tags <strong> */
+
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    /* scroll-behavior: smooth; */
+    font-family: var(--fontBody);
 }
+
+strong {
+    font-style: italic;
+}
+
+/* Estilização do Header */
 
 header {
     background-image: linear-gradient(to right bottom, var(--color1), var(--color2), var(--color3));
@@ -44,6 +57,11 @@ nav > ul > li:hover {
     text-decoration: underline;
 }
 
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
 h1 {
     font-family: var(--fontTitle);
     color: rgb(224, 222, 222);
@@ -53,6 +71,8 @@ h1 {
     transform: translateY(-50%);
     font-size: 8em;
 }
+
+/* Estilização da section "about-me" */
 
 #about-me {
     text-align: center;
@@ -113,6 +133,8 @@ h1 {
     padding: 5px 0px;
 }
 
+/* Estilização da Section "abilities" */
+
 #abilities {
     padding: 30px;
     background-image: linear-gradient(to right bottom, var(--color1), var(--color2), var(--color3));
@@ -144,6 +166,7 @@ h1 {
 #python > p {
     margin: auto;
     padding-right: 22px;
+    font-size: 1.2em;
 }
 
 #html-css {
@@ -158,6 +181,7 @@ h1 {
 #html-css > p {
     margin: auto;
     padding-left: 20px;
+    font-size: 1.2em;
 }
 
 #html-css > img {
@@ -182,4 +206,218 @@ h1 {
 #js > p {
     margin: auto;
     padding-right: 22px;
+    font-size: 1.2em;
+}
+
+/* Estilização da section "projects" */
+
+#projects {
+    text-align: center;
+    margin: 50px;
+}
+
+#projects > h2 {
+    font-family: var(--fontTitle);
+    padding-bottom: 50px;
+}
+
+/* Node-Login */
+
+#node-login {
+    display: grid;
+    grid-template-columns: repeat(2 auto);
+    grid-template-rows: 30px 120px 35px;
+    width: 1000px;
+    margin: auto;
+}
+
+#node-login > h3 {
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 1.7em;
+    font-style: italic;
+    text-align: right;
+    margin-right: 38px;
+}
+
+#node-login > p {
+    grid-row: 2;
+    grid-column: 1;
+    margin: auto;
+    width: 500px;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+#node-login > .project-btn {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.project-btn > a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid var(--color3);
+    border-radius: 10px;
+    padding: 4px;
+    transition: .3s;
+}
+
+.project-btn > a:hover {
+    background-color: var(--color4);
+}
+
+#node-login > img.project-img {
+    width: 350px;
+    grid-row: 1 / 3;
+    grid-column: 2;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+#node-login > img.project-img:hover {
+    transform: scale(1.2);
+}
+
+/* Pomodoro-Web */
+
+#pomodoro-web {
+    display: grid;
+    grid-template-columns: repeat(2 auto);
+    grid-template-rows: 30px 145px 35px;
+    width: 1000px;
+    margin: 60px auto;
+    align-items: center;
+    align-content: center;
+}
+
+#pomodoro-web > h3 {
+    grid-row: 1;
+    grid-column: 2;
+    font-size: 1.7em;
+    font-style: italic;
+    text-align: left;
+    margin-left: 37px;
+}
+
+#pomodoro-web > p {
+    grid-row: 2;
+    grid-column: 2;
+    margin: auto;
+    width: 500px;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+#pomodoro-web > .project-btn {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.project-btn > a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid var(--color3);
+    border-radius: 10px;
+    padding: 4px;
+    transition: .3s;
+}
+
+.project-btn > a:hover {
+    background-color: var(--color4);
+}
+
+#pomodoro-web > img.project-img {
+    position: relative;
+    top: 8%;
+    left: 18%;
+    width: 350px;
+    grid-row: 1 / 3;
+    grid-column: 1;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+#pomodoro-web > img.project-img:hover {
+    transform: scale(1.2);
+}
+
+/* To-do List */
+
+#todo-list {
+    display: grid;
+    grid-template-columns: repeat(2 auto);
+    grid-template-rows: 40px 140px 35px 270px;
+    width: 1000px;
+    margin: auto;
+}
+
+#todo-list > h3 {
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 1.7em;
+    font-style: italic;
+    text-align: right;
+    margin-right: 38px;
+}
+
+#todo-list > p {
+    grid-row: 2;
+    grid-column: 1;
+    margin: auto;
+    width: 500px;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+#todo-list > .project-btn {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.project-btn > a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid var(--color3);
+    border-radius: 10px;
+    padding: 4px;
+    transition: .3s;
+}
+
+.project-btn > a:hover {
+    background-color: var(--color4);
+}
+
+#todo-list > img.project-img {
+    width: 350px;
+    grid-row: 1 / 4;
+    grid-column: 2;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+#todo-list > img.project-img:hover {
+    transform: scale(1.2);
+}
+
+/* Footer */
+
+footer {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    word-spacing: 2px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+
+footer a:hover {
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.295);
+    border-radius: 10px;
 }
