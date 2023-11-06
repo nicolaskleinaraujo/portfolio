@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
-    --fontH1: 'Press Start 2P', sans-serif;
+    --fontTitle: 'Press Start 2P', sans-serif;
 
     --color1: #212226;
     --color2: #3E4F59;
@@ -19,44 +19,174 @@
 
 header {
     background-image: linear-gradient(to right bottom, var(--color1), var(--color2), var(--color3));
-    height: 500px;
+    height: 100vh;
     margin: auto;
 }
 
 nav {
-    background-color: rgba(255, 255, 255, 0.219);
+    background-color: var(--color4);
+    position: fixed;
+    text-align: center;
+    width: 100%;
 }
 
 nav > ul {
-    display: flex;
     list-style-type: none;
-    padding: 10px;
-    justify-content: center;
 }
 
 nav > ul > li {
-    padding: 10px;
+    display: inline-block;
+    padding: 20px 15px;
+    font-size: 1.5em;
 }
 
 nav > ul > li:hover {
     text-decoration: underline;
 }
 
-nav > ul > button {
-    display: flex;
-}
-
 h1 {
-    font-family: var(--fontH1);
+    font-family: var(--fontTitle);
     color: rgb(224, 222, 222);
     text-align: center;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    font-size: 8em;
+}
+
+#about-me {
+    text-align: center;
+    margin: 50px;
+}
+
+#about-me > h2 {
+    font-family: var(--fontTitle);
+    font-size: 2.5em;
+    padding-bottom: 25px;
+}
+
+#socials {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
 }
 
 #socials > img {
-    width: 100px;
+    width: 300px;
     border-radius: 50%;
 }
 
+#socials > ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+}
+
+#socials li {
+    padding: 2px;
+    font-size: 1.3em;
+}
+
+#socials a {
+    text-decoration: none;
+    color: black;
+}
+
+#socials a:hover {
+    text-decoration: underline;
+}
+
+#text-about {
+    padding-left: 90px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.5em;
+}
+
+#text-about > ul {
+    padding: 15px;
+    text-align: left;
+    list-style-type: square;
+}
+
+#text-about li {
+    padding: 5px 0px;
+}
+
+#abilities {
+    padding: 30px;
+    background-image: linear-gradient(to right bottom, var(--color1), var(--color2), var(--color3));
+}
+
+#abilities > h2 {
+    font-family: var(--fontTitle);
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+#abilities > div {
+    display: inline-block;
+    justify-content: center;
+    background-color: white;
+    width: 500px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+#python img {
+    display: inline-block;
+    width: 100px;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+#python p {
+    display: inline-block;
+    width: 300px;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+#html-css img {
+    width: 155px;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 10px;
+}
+
+#html-css p {
+    display: inline-block;
+    width: 300px;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+#js img {
+    width: 109px;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 10px;
+}
+
+#js p {
+    display: inline-block;
+    width: 300px;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+#node img {
+    width: 109px;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 10px;
+}
+
+#node p {
+    display: inline-block;
+    width: 300px;
+    vertical-align: middle;
+    padding: 10px;
+}
