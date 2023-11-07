@@ -28,6 +28,16 @@ strong {
     font-style: italic;
 }
 
+/* Config da Linguagem */
+
+div#pt-br {
+    display: block;
+}
+
+div#en {
+    display: none;
+}
+
 /* Estilização do Header */
 
 header {
@@ -60,6 +70,30 @@ nav a {
     text-decoration: none;
     color: black;
 }
+
+nav button {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    border: none;
+    background-color: var(--color4);
+    text-align: center;
+    transition: .3s;
+    border-radius: 8px;
+}
+
+nav button:hover {
+    background-color: var(--color5);
+}
+
+nav button#active {
+    background-color: var(--color3);
+}
+
+nav img {
+    width: 30px;
+}
+
 
 h1 {
     font-family: var(--fontTitle);
@@ -410,8 +444,10 @@ h1 {
     background-color: var(--color4);
     cursor: pointer;
     transition: .3s;
-    display: flex;
+    display: none;
     align-items: center;
+    text-decoration: none;
+    color: black;
 }
 
 #scrollBtn:hover {
