@@ -1,4 +1,4 @@
-/* Change Language Function */
+// Change Language Function
 const brPage = document.getElementById('pt-br')
 const enPage = document.getElementById('en')
 var actualLang = 'pt-br'
@@ -21,13 +21,12 @@ function changeToEN() {
     }
 }
 
-/* Hide Scroll Button Function */
-const scrollBtn = document.getElementById('scrollBtn')
 
-document.addEventListener('scroll', () => {
-    if (window.scrollY > 200) {
-        scrollBtn.style.display = "flex"
+// Show Help for the Downloaded file (To-do list)
+function showHelp() {
+    if (actualLang == 'pt-br') {
+        window.alert('Execute o arquivo ".exe" na mesma pasta que o arquivo ".csv".')
     } else {
-        scrollBtn.style.display = "none"
+        window.alert('Run the ".exe" file in the same folder as the ".csv" file.')
     }
-})
+}

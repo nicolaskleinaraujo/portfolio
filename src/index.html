@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-query.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-
     <div id="pt-br">
         <header id="ptHome">
             <nav>
@@ -18,8 +17,8 @@
                     <li><a href="#about-me">Sobre Mim</a></li>
                     <li><a href="#abilities">Habilidades</a></li>
                     <li><a href="#projects">Projetos</a></li>
-                    <li><button type="button" onclick="changeToPT()"><img src="images/others/br-flag.png" alt="Bandeira do Brasil"></button></li>
-                    <li><button type="button" onclick="changeToEN()"><img src="images/others/us-flag.png" alt="Bandeira dos Estados Unidos"></button></li>
+                    <li><button type="button" onclick="changeToPT()" class="active" id="brBtn"><img src="images/others/br-flag.png" alt="Bandeira do Brasil"></button></li>
+                    <li><button type="button" onclick="changeToEN()" id="enBtn"><img src="images/others/us-flag.png" alt="Bandeira dos Estados Unidos"></button></li>
                 </ul>
             </nav>
             <h1>Nicolas<br>Klein</h1>
@@ -41,7 +40,7 @@
                     <ul>
                         <li>Meu nome é <strong>Nicolas Klein</strong> e tenho 17 anos.</li>
                         <li>Nasci e <strong>moro em Maringá-PR</strong></li>
-                        <li>Possuo <strong>fluência em inglês</strong></li>
+                        <li>Possuo <strong>proficiência em inglês</strong></li>
                         <li><strong>Comecei a estudar programação</strong> em outubro de <strong>2022</strong>.</li>
                         <li>Estou <strong>finalizando o ensino médio</strong> e pretendo cursar <strong>Analise e Desenvolvimento de Sistemas</strong>.</li>
                         <li>Faço projetos utilizando linguagens como: <strong>JavaScript, HTML, CSS e Python</strong>.</li>
@@ -71,19 +70,19 @@
                     <h3>Login com Node.js</h3>
                     <p>Tela de login desenvolvida utilizando o framework <strong>"Express"</strong> no <strong>Node.js</strong> para o servidor e o banco de dados do <strong>MongoDB Atlas</strong> para salvar os dados de usuario. O site e a estilização foram feitas utilizando <strong>HTML e CSS</strong>.</p>
                     <p class="project-btn"><a href="#" target="_blank">Ver site</a> <a href="https://github.com/nicolaskleinaraujo/node-login" target="_blank">Ver codigo</a></p>
-                    <img src="images/projects/node-login-img.jpg" alt="Print de uma tela de login" class="project-img">
+                    <img src="images/projects-photos/node-login-img.jpg" alt="Print de uma tela de login" class="project-img">
                 </div>
                 <div id="pomodoro-web">
                     <h3>Site Pomodoro</h3>
                     <p>Site para estudos que usa o metodo "Pomodoro". Site desenvolvido utilizando <strong>HTML, CSS e JavaScript</strong>. O site consiste em um timer customizado para melhor efetividade do seu estudo e uma lista "To-do" que ajuda na programação de tarefas.</p>
                     <p class="project-btn"><a href="https://nicolaskleinaraujo.github.io/pomodoro-web/" target="_blank">Ver site</a> <a href="https://github.com/nicolaskleinaraujo/pomodoro-web" target="_blank">Ver codigo</a></p>
-                    <img src="images/projects/pomodoro-web-img.jpg" alt="Print de um site Pomodoro" class="project-img">
+                    <img src="images/projects-photos/pomodoro-web-img.jpg" alt="Print de um site Pomodoro" class="project-img">
                 </div>
                 <div id="todo-list">
                     <h3>To-do List Python</h3>
                     <p>Lista "To-do" feita utilizando <strong>Python</strong>. A interface grafica foi feita utilizando a biblioteca <strong>"PyQT"</strong> e o salvamento dos dados foi feito utilizando o <strong>"Pandas"</strong> em um arquivo <strong>"csv"</strong>. A lista "To-do" facilita a programação de tarefas cotidianas.</p>
-                    <p class="project-btn"><a href="https://github.com/nicolaskleinaraujo/todo-list" target="_blank">Ver codigo</a></p>
-                    <img src="images/projects/todo-list-img.jpg" alt="Print de uma lista to-do" class="project-img">
+                    <p class="project-btn"><a href="todo-list-project/todolist-app.zip" download="todolist-app.zip" onclick="showHelp()">Download</a> <a href="https://github.com/nicolaskleinaraujo/todo-list" target="_blank">Ver codigo</a></p>
+                    <img src="images/projects-photos/todo-list-img.jpg" alt="Print de uma lista to-do" class="project-img">
                 </div>
             </section>
         </main>
@@ -97,17 +96,17 @@
         <header id="enHome">
             <nav>
                 <ul>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#abilities">Abilities</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about-me-en">About Me</a></li>
+                    <li><a href="#abilities-en">Abilities</a></li>
+                    <li><a href="#projects-en">Projects</a></li>
                     <li><button type="button" onclick="changeToPT()"><img src="images/others/br-flag.png" alt="Bandeira do Brasil"></button></li>
-                    <li><button type="button" onclick="changeToEN()"><img src="images/others/us-flag.png" alt="Bandeira dos Estados Unidos"></button></li>
+                    <li><button type="button" onclick="changeToEN()" class="active"><img src="images/others/us-flag.png" alt="Bandeira dos Estados Unidos"></button></li>
                 </ul>
             </nav>
             <h1>Nicolas<br>Klein</h1>
         </header>
         <main>
-            <section id="about-me">
+            <section id="about-me-en">
                 <h2>About Me</h2>
                 <div id="socials">
                     <img src="images/others/my-photo.jpg" alt="Foto Pessoa">
@@ -123,7 +122,7 @@
                     <ul>
                         <li>My name is <strong>Nicolas Klein</strong> and I am 17 years old.</li>
                         <li>I was born and <strong>live in Brazil</strong></li>
-                        <li>I have <strong>fluency in English</strong></li>
+                        <li>I have <strong>proficiency in English</strong></li>
                         <li><strong>I started studying programming</strong> in October <strong>2022</strong>.</li>
                         <li>I am <strong>finishing High School</strong> and I intend to study <strong>Systems Analysis and Development</strong>.</li>
                         <li>I create projects using languages such as: <strong>JavaScript, HTML, CSS and Python</strong>.</li>
@@ -132,40 +131,40 @@
                     </ul>
                 </div>
             </section>
-            <section id="abilities">
+            <section id="abilities-en">
                 <h2>Abilities</h2>
                 <div id="python">
                     <img src="images/logos/python-logo.png" alt="Logo Python">
                     <p><strong>Python</strong> was the first programming language I studied. I can develop <strong>graphical interfaces and activity automations</strong>. I have knowledge of libraries like <strong>Pandas, PyQT, PyAutoGui and Selenium</strong>.</p>
                 </div>
                 <div id="html-css">
-                    <p><strong>HTML e CSS</strong> are the main languages I use to <strong>structure and style my websites</strong>. I use tools like <strong>Figma</strong> to <strong>pré-structure my websites</strong>.</p>
+                    <p><strong>HTML and CSS</strong> are the main languages I use to <strong>structure and style my websites</strong>. I use tools like <strong>Figma</strong> to <strong>pré-structure my websites</strong>.</p>
                     <img src="images/logos/html-css-logo.png" alt="Logo HTML e CSS">
                 </div>
                 <div id="js">
                     <img src="images/logos/javascript-logo.png" alt="Logo JavaScript">
-                    <p><strong>JavaScript</strong> is the <strong>my language</strong> that I study nowadays. I use it both on <strong>websites</strong> and <strong>integrated with "Node.js"</strong> for backend applications. I have knowledge in <strong>servers and databases</strong>, for this, I use <strong>Express</strong> together with <strong>MongoDB</strong></p>
+                    <p><strong>JavaScript</strong> is <strong>my language</strong> that I study nowadays. I use it both on <strong>websites</strong> and <strong>integrated with "Node.js"</strong> for backend applications. I have knowledge in <strong>servers and databases</strong>, for this, I use <strong>Express</strong> together with <strong>MongoDB</strong></p>
                 </div>
             </section>
-            <section id="projects">
+            <section id="projects-en">
                 <h2>Projects</h2>
                 <div id="node-login">
                     <h3>Login Page With Node.js</h3>
                     <p>Login screen developed using the framework <strong>"Express"</strong> in <strong>Node.js</strong> for the server and the database of <strong>MongoDB Atlas</strong> to save user data. The website and styling were done using <strong>HTML and CSS</strong>.</p>
                     <p class="project-btn"><a href="#" target="_blank">See site</a> <a href="https://github.com/nicolaskleinaraujo/node-login" target="_blank">See code</a></p>
-                    <img src="images/projects/node-login-img.jpg" alt="Print de uma tela de login" class="project-img">
+                    <img src="images/projects-photos/node-login-img.jpg" alt="Print de uma tela de login" class="project-img">
                 </div>
                 <div id="pomodoro-web">
                     <h3>Pomodoro Website</h3>
                     <p>Study site that uses the "Pomodoro" method. Website developed using <strong>HTML, CSS and JavaScript</strong>. The website consists of a customized timer to improve the effectiveness of your study and a "To-do" list that helps with scheduling tasks.</p>
                     <p class="project-btn"><a href="https://nicolaskleinaraujo.github.io/pomodoro-web/" target="_blank">See site</a> <a href="https://github.com/nicolaskleinaraujo/pomodoro-web" target="_blank">See code</a></p>
-                    <img src="images/projects/pomodoro-web-img.jpg" alt="Print de um site Pomodoro" class="project-img">
+                    <img src="images/projects-photos/pomodoro-web-img.jpg" alt="Print de um site Pomodoro" class="project-img">
                 </div>
                 <div id="todo-list">
                     <h3>To-do List With Python</h3>
                     <p>"To-do" list made using <strong>Python</strong>. The graphical interface was made using the library <strong>"PyQT"</strong> and the data saving was done using the <strong>"Pandas"</strong> in a <strong>"csv"</strong> file. The "To-do" list makes it easy to schedule everyday tasks.</p>
-                    <p class="project-btn"><a href="https://github.com/nicolaskleinaraujo/todo-list" target="_blank">See code</a></p>
-                    <img src="images/projects/todo-list-img.jpg" alt="Print de uma lista to-do" class="project-img">
+                    <p class="project-btn"><a href="todo-list-project/todolist-app.zip" download="todolist-app.zip" onclick="showHelp()">Download</a> <a href="https://github.com/nicolaskleinaraujo/todo-list" target="_blank">See code</a></p>
+                    <img src="images/projects-photos/todo-list-img.jpg" alt="Print de uma lista to-do" class="project-img">
                 </div>
             </section>
         </main>

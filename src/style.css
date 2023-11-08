@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500&family=Press+Start+2P&display=swap');
 
 
-/* Variaveis */
+/* Variables */
 :root {
     --fontTitle: 'Press Start 2P', sans-serif;
     --fontBody: 'Lora', serif;
@@ -14,8 +14,8 @@
     --color5: #B5D991;
 }
 
-/* Estilização Global e nas tags <strong> */
 
+/* Global styling and in <strong> tags */
 * {
     padding: 0px;
     margin: 0px;
@@ -28,8 +28,8 @@ strong {
     font-style: italic;
 }
 
-/* Config da Linguagem */
 
+/* Language configs */
 div#pt-br {
     display: block;
 }
@@ -38,14 +38,15 @@ div#en {
     display: none;
 }
 
-/* Estilização do Header */
 
+/* Header section styling */
 header {
     background-image: linear-gradient(to right bottom, var(--color1), var(--color2), var(--color3));
     height: 100vh;
     margin: auto;
 }
 
+/* nav styling */
 nav {
     background-color: var(--color4);
     text-align: center;
@@ -86,15 +87,15 @@ nav button:hover {
     background-color: var(--color5);
 }
 
-nav button#active {
-    background-color: var(--color3);
+nav button.active {
+    background-color: var(--color5);
 }
 
 nav img {
     width: 30px;
 }
 
-
+/* h1 styling */
 h1 {
     font-family: var(--fontTitle);
     color: rgb(224, 222, 222);
@@ -105,19 +106,20 @@ h1 {
     font-size: 8em;
 }
 
-/* Estilização da section "about-me" */
 
-#about-me {
+/* "about-me" section styling */
+#about-me, #about-me-en {
     text-align: center;
     margin: 50px;
 }
 
-#about-me > h2 {
+#about-me > h2, #about-me-en > h2 {
     font-family: var(--fontTitle);
     font-size: 2.5em;
     padding-bottom: 25px;
 }
 
+/* "socials" styling */
 #socials {
     display: inline-block;
     text-align: center;
@@ -136,19 +138,23 @@ h1 {
 }
 
 #socials li {
-    padding: 2px;
+    padding: 5px 0px;
     font-size: 1.3em;
 }
 
 #socials a {
     text-decoration: none;
     color: black;
+    transition: .3s;
+    padding: 2px;
 }
 
 #socials a:hover {
-    text-decoration: underline;
+    background-color: lightgray;
+    border-radius: 8px;
 }
 
+/* "text-about" styling */
 #text-about {
     padding-left: 90px;
     display: inline-block;
@@ -166,14 +172,14 @@ h1 {
     padding: 5px 0px;
 }
 
-/* Estilização da Section "abilities" */
 
-#abilities {
+/* "abilities" section styling */
+#abilities, #abilities-en {
     padding: 30px;
     background-image: linear-gradient(to right bottom, var(--color1), var(--color2), var(--color3));
 }
 
-#abilities > h2 {
+#abilities > h2, #abilities-en  > h2 {
     font-family: var(--fontTitle);
     font-size: 2.5em;
     text-align: center;
@@ -182,6 +188,7 @@ h1 {
     align-items: center;
 }
 
+/* "Python" styling */
 #python {
     display: flex;
     background-color: var(--color5);
@@ -202,6 +209,7 @@ h1 {
     font-size: 1.2em;
 }
 
+/* "html-css" styling */
 #html-css {
     display: flex;
     background-color: var(--color5);
@@ -222,6 +230,7 @@ h1 {
     padding: 15px 20px 15px 10px;
 }
 
+/* "js" styling */
 #js {
     display: flex;
     background-color: var(--color5);
@@ -242,20 +251,19 @@ h1 {
     font-size: 1.2em;
 }
 
-/* Estilização da section "projects" */
 
-#projects {
+/* "projects" section styling */
+#projects, #projects-en {
     text-align: center;
     margin: 50px;
 }
 
-#projects > h2 {
+#projects > h2, #projects-en > h2 {
     font-family: var(--fontTitle);
     padding-bottom: 50px;
 }
 
-/* Node-Login */
-
+/* "Node-Login" styling */
 #node-login {
     display: grid;
     grid-template-columns: repeat(2 auto);
@@ -301,19 +309,19 @@ h1 {
 }
 
 #node-login > img.project-img {
-    width: 350px;
+    width: 290px;
     grid-row: 1 / 3;
     grid-column: 2;
     border-radius: 10px;
     transition: .3s;
+    border: 3px solid var(--color5);
 }
 
 #node-login > img.project-img:hover {
     transform: scale(1.2);
 }
 
-/* Pomodoro-Web */
-
+/* "Pomodoro-Web" styling */
 #pomodoro-web {
     display: grid;
     grid-template-columns: repeat(2 auto);
@@ -369,14 +377,14 @@ h1 {
     grid-column: 1;
     border-radius: 10px;
     transition: .3s;
+    border: 3px solid var(--color5);
 }
 
 #pomodoro-web > img.project-img:hover {
     transform: scale(1.2);
 }
 
-/* To-do List */
-
+/* "To-do List" styling */
 #todo-list {
     display: grid;
     grid-template-columns: repeat(2 auto);
@@ -427,14 +435,15 @@ h1 {
     grid-column: 2;
     border-radius: 10px;
     transition: .3s;
+    border: 3px solid var(--color5);
 }
 
 #todo-list > img.project-img:hover {
     transform: scale(1.2);
 }
 
-/* Scroll to Top Button */
 
+/* "Scroll to Top Button" styling */
 #scrollBtn {
     position: fixed;
     bottom: 70px;
@@ -444,7 +453,7 @@ h1 {
     background-color: var(--color4);
     cursor: pointer;
     transition: .3s;
-    display: none;
+    display: flex;
     align-items: center;
     text-decoration: none;
     color: black;
@@ -454,8 +463,8 @@ h1 {
     background-color: var(--color5);
 }
 
-/* Footer */
 
+/* Footer section styling */
 footer {
     padding: 15px;
     background-color: black;
