@@ -55,21 +55,26 @@ nav {
 
 nav > ul {
     list-style-type: none;
+    padding: 17px;
 }
 
 nav > ul > li {
     display: inline-block;
-    padding: 20px 15px;
+    margin-right: 12px;
     font-size: 1.5em;
+    transition: .3s;
+    padding: 3px;
+    border-radius: 15px;
 }
 
 nav > ul > li:hover {
-    text-decoration: underline;
+    background-color: var(--color5);
 }
 
 nav a {
     text-decoration: none;
     color: black;
+    border-radius: 3px;
 }
 
 nav button {
@@ -147,11 +152,11 @@ h1 {
     color: black;
     transition: .3s;
     padding: 2px;
+    border-radius: 8px;
 }
 
 #socials a:hover {
     background-color: lightgray;
-    border-radius: 8px;
 }
 
 /* "text-about" styling */
