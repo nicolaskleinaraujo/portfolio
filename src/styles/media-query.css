@@ -1,9 +1,211 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 578px) {
+/* Desktop 2 Website */
+@media screen and (min-width: 1120px) and (max-width: 1550px) {
+    /* h1 styling */
+    h1 {
+        font-size: 5em;
+    }
+
+    /* "about-me" section styling */
+    #about-me > h2, #about-me-en > h2 {
+        font-size: 2em;
+    }
+
+    /* "socials" styling */
+    #socials > img {
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    #socials li {
+        padding: 5px 0px;
+        font-size: 1.1em;
+    }
+
+    /* "text-about" styling */
+    #text-about {
+        font-size: 1.3em;
+        padding-left: 90px;
+    }
+
+    /* "abilities" section styling */
+    #abilities > h2, #abilities-en  > h2 {
+        font-size: 2em;
+    }
+}
+
+
+/* Desktop Website */
+@media screen and (min-width: 1000px) and (max-width: 1120px) {
     /* nav styling */
     nav > ul > li {
+        font-size: 1.3em;
+    }
+
+    nav img {
+        width: 30px;
+    }
+
+    /* h1 styling */
+    h1 {
+        font-size: 5em;
+    }
+
+    /* "about-me" section styling */
+    #about-me > h2, #about-me-en > h2 {
+        font-size: 2em;
+    }
+
+    /* "socials" styling */
+    #socials > img {
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    #socials li {
+        padding: 5px 0px;
         font-size: 1em;
+    }
+
+    /* "text-about" styling */
+    #text-about {
+        font-size: 1.1em;
+        width: 100%;
+        padding-left: 17%;
+    }
+
+    /* "abilities" section styling */
+    #abilities > h2, #abilities-en  > h2 {
+        font-size: 2em;
+    }
+
+    /* "Python" styling */
+    #python {
+        width: 600px;
+        padding: 5px;
+    }
+    
+    #python > img {
+        width: 70px;
+        padding: 20px 0px 10px 20px;
+    }
+    
+    #python > p {
+        font-size: 1em;
+    }
+
+    /* "html-css" styling */
+    #html-css {
+        width: 600px;
+        padding: 5px;
+    }
+    
+    #html-css > p {
+        font-size: 1em;
+    }
+    
+    #html-css > img {
+        width: 79px;
+        padding: 15px 20px 15px 2px;
+    }
+
+    /* "js" styling */
+    #js {
+        width: 600px;
+        padding: 5px;
+    }
+
+    #js > img {
+        width: 79px;
+        padding: 20px 10px 20px 25px;
+    }
+    
+    #js > p {
+        font-size: 1em;
+    }
+
+    /* "projects" section styling */
+    #projects > h2, #projects-en > h2 {
+        font-size: 2em;
+    }
+
+    /* "Node-Login" styling */
+    #node-login {
+        display: block;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    #node-login > h3 {
+        text-align: center;
+        margin: 0px auto 8px auto;
+        font-size: 1.8em;
+    }
+
+    #node-login > p {
+        text-align: center;
+        width: 90%;
+        margin: 0px auto 18px auto;
+        font-size: 1.3em;
+    }
+
+    /* "Pomodoro-Web" styling */
+    #pomodoro-web {
+        display: block;
+        max-width: 100%;
+        margin: 30px auto;
+    }
+    
+    #pomodoro-web > h3 {
+        text-align: center;
+        margin: 0px auto 8px auto;
+        font-size: 1.8em;
+    }
+    
+    #pomodoro-web > p {
+        text-align: center;
+        margin: 0px auto 18px auto;
+        width: 90%;
+        font-size: 1.3em;
+    }
+
+    #pomodoro-web > img.project-img {
+        position: static;
+        width: 300px;
+    }
+
+    /* "To-do List" styling */
+    #todo-list {
+        display: block;
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    #todo-list > h3 {
+        text-align: center;
+        margin: 0px auto 8px auto;
+        font-size: 1.8em;
+    }
+
+    #todo-list > p {
+        text-align: center;
+        margin: 0px auto 18px auto;
+        width: 90%;
+        font-size: 1.3em;
+    }
+
+    #todo-list > img.project-img {
+        width: 300px;
+    }
+}
+
+
+/* Tablet 2 Website */
+@media screen and (min-width: 864px) and (max-width: 1000px) {
+    /* nav styling */
+    nav > ul > li {
+        font-size: 1.3em;
     }
 
     nav img {
@@ -12,149 +214,202 @@
 
     /* h1 styling */
     h1 {
-        font-size: 2.5em;
-    }
-
-    /* "about-me" section styling */
-    /* "socials" styling */
-    #socials > img {
-        width: 150px;
-        border-radius: 50%;
-    }
-
-    #socials li {
-        padding: 5px 0px;
-        font-size: 0.9em;
-    }
-
-    /* "text-about" styling */
-    #text-about {
-        display: block;
-        font-size: 1em;
-    }
-
-    /* "Python" styling */
-    #python {
-        width: 420px;
-        padding: 5px;
-    }
-
-    #python > img {
-        width: 45px;
-        padding: 15px 0px 10px 13px;
-    }
-    
-    #python > p {
-        font-size: 0.8em;
-    }
-
-    /* "html-css" styling */
-    #html-css {
-        width: 420px;
-        padding: 5px;
-    }
-    
-    #html-css > p {
-        font-size: 0.8em;
-    }
-    
-    #html-css > img {
-        width: 74px;
-        padding: 15px 15px 10px 5px;
-    }
-
-    /* "js" styling */
-    #js {
-        width: 420px;
-        padding: 5px;
-    }
-
-    #js > img {
-        width: 75px;
-        padding: 22px 12px 22px 12px;
-    }
-    
-    #js > p {
-        font-size: 0.8em;
-    }
-}
-
-@media screen and (min-width: 578px) and (max-width: 660px) {
-
-    /* h1 styling */
-    h1 {
         font-size: 5em;
     }
 
     /* "about-me" section styling */
+    #about-me > h2, #about-me-en > h2 {
+        font-size: 2em;
+    }
+
     /* "socials" styling */
     #socials > img {
-        width: 150px;
+        width: 200px;
         border-radius: 50%;
     }
 
     #socials li {
         padding: 5px 0px;
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     /* "text-about" styling */
     #text-about {
-        display: block;
-        font-size: 1em;
+        font-size: 1.1em;
+        width: 100%;
+        margin: auto;
+        padding-left: 17%;
+    }
+
+    /* "abilities" section styling */
+    #abilities > h2, #abilities-en  > h2 {
+        font-size: 2em;
     }
 
     /* "Python" styling */
     #python {
-        width: 420px;
+        width: 600px;
         padding: 5px;
     }
-
+    
     #python > img {
-        width: 45px;
-        padding: 15px 0px 10px 13px;
+        width: 70px;
+        padding: 20px 0px 10px 20px;
     }
     
     #python > p {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     /* "html-css" styling */
     #html-css {
-        width: 420px;
+        width: 600px;
         padding: 5px;
     }
     
     #html-css > p {
-        font-size: 0.8em;
+        font-size: 1em;
     }
     
     #html-css > img {
-        width: 74px;
-        padding: 15px 15px 10px 5px;
+        width: 79px;
+        padding: 15px 20px 15px 2px;
     }
 
     /* "js" styling */
     #js {
-        width: 420px;
+        width: 600px;
         padding: 5px;
     }
 
     #js > img {
-        width: 75px;
-        padding: 22px 12px 22px 12px;
+        width: 79px;
+        padding: 20px 10px 20px 25px;
     }
     
     #js > p {
-        font-size: 0.8em;
+        font-size: 1em;
+    }
+
+    /* "projects" section styling */
+    #projects > h2, #projects-en > h2 {
+        font-size: 2em;
+    }
+
+    /* "Node-Login" styling */
+    #node-login {
+        display: block;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    #node-login > h3 {
+        text-align: center;
+        margin: 0px auto 8px auto;
+        font-size: 1.6em;
+    }
+
+    #node-login > p {
+        text-align: center;
+        width: 90%;
+        margin: 0px auto 18px auto;
+        font-size: 1.1em;
+    }
+
+    /* "Pomodoro-Web" styling */
+    #pomodoro-web {
+        display: block;
+        max-width: 100%;
+        margin: 30px auto;
+    }
+    
+    #pomodoro-web > h3 {
+        text-align: center;
+        margin: 0px auto 8px auto;
+        font-size: 1.6em;
+    }
+    
+    #pomodoro-web > p {
+        text-align: center;
+        margin: 0px auto 18px auto;
+        width: 90%;
+        font-size: 1.1em;
+    }
+
+    #pomodoro-web > img.project-img {
+        position: static;
+        width: 300px;
+    }
+
+    /* "To-do List" styling */
+    #todo-list {
+        display: block;
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    #todo-list > h3 {
+        text-align: center;
+        margin: 0px auto 8px auto;
+        font-size: 1.6em;
+    }
+
+    #todo-list > p {
+        text-align: center;
+        margin: 0px auto 18px auto;
+        width: 90%;
+        font-size: 1.1em;
+    }
+
+    #todo-list > img.project-img {
+        width: 300px;
     }
 }
 
+
+/* Tablet Website */
 @media screen and (min-width: 660px) and (max-width: 864px) {
+    /* nav styling */
+    nav > ul > li {
+        font-size: 1.1em;
+    }
+
+    nav img {
+        width: 20px;
+    }
 
     /* h1 styling */
     h1 {
         font-size: 5em;
+    }
+
+    /* "about-me" section styling */
+    #about-me > h2, #about-me-en > h2 {
+        font-size: 2em;
+    }
+
+    /* "socials" styling */
+    #socials > img {
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    #socials li {
+        padding: 5px 0px;
+        font-size: 1em;
+    }
+
+    /* "text-about" styling */
+    #text-about {
+        font-size: 1.2em;
+        width: 100%;
+        margin: auto;
+        padding-left: 0px;
+    }
+
+    /* "abilities" section styling */
+    #abilities > h2, #abilities-en  > h2 {
+        font-size: 2em;
     }
 
     /* "Python" styling */
@@ -201,64 +456,10 @@
     #js > p {
         font-size: 0.9em;
     }
-}
 
-@media screen and (min-width: 864px) and (max-width: 1000px) {
-
-    /* h1 styling */
-    h1 {
-        font-size: 5em;
-    }
-
-    /* "Python" styling */
-    #python > img {
-        width: 70px;
-        padding: 20px 0px 10px 20px;
-    }
-    
-    #python > p {
-        font-size: 1em;
-    }
-
-    /* "html-css" styling */
-    #html-css > p {
-        font-size: 1em;
-    }
-    
-    #html-css > img {
-        width: 79px;
-        padding: 15px 20px 15px 2px;
-    }
-
-    /* "js" styling */
-    #js > img {
-        width: 79px;
-        padding: 20px 10px 20px 25px;
-    }
-    
-    #js > p {
-        font-size: 1em;
-    }
-}
-
-@media screen and (max-width: 1120px) {
-
-    /* "about-me" section styling */
-    /* "socials" styling */
-    #socials > img {
-        width: 150px;
-        border-radius: 50%;
-    }
-
-    #socials li {
-        padding: 5px 0px;
-        font-size: 0.9em;
-    }
-
-    /* "text-about" styling */
-    #text-about {
-        display: block;
-        font-size: 1em;
+    /* "projects" section styling */
+    #projects > h2, #projects-en > h2 {
+        font-size: 2em;
     }
 
     /* "Node-Login" styling */
@@ -271,11 +472,14 @@
     #node-login > h3 {
         text-align: center;
         margin: 0px auto 8px auto;
+        font-size: 1.5em;
     }
 
     #node-login > p {
         text-align: center;
+        width: 90%;
         margin: 0px auto 18px auto;
+        font-size: 1.2em;
     }
 
     /* "Pomodoro-Web" styling */
@@ -288,11 +492,14 @@
     #pomodoro-web > h3 {
         text-align: center;
         margin: 0px auto 8px auto;
+        font-size: 1.5em;
     }
     
     #pomodoro-web > p {
         text-align: center;
         margin: 0px auto 18px auto;
+        width: 90%;
+        font-size: 1.2em;
     }
 
     #pomodoro-web > img.project-img {
@@ -310,11 +517,14 @@
     #todo-list > h3 {
         text-align: center;
         margin: 0px auto 8px auto;
+        font-size: 1.5em;
     }
 
     #todo-list > p {
         text-align: center;
         margin: 0px auto 18px auto;
+        width: 90%;
+        font-size: 1.2em;
     }
 
     #todo-list > img.project-img {
@@ -322,9 +532,32 @@
     }
 }
 
-@media screen and (min-width: 1120px) and (max-width: 1550px) {
+
+/* Mobile 3 Website */
+@media screen and (min-width: 578px) and (max-width: 660px) {
+    /* nav styling */
+    nav > ul > li {
+        font-size: 1em;
+    }
+
+    nav img {
+        width: 20px;
+    }
+
+    /* h1 styling */
+    h1 {
+        font-size: 5em;
+    }
+
+    /* "about-me" section styling */
+    #about-me > h2, #about-me-en > h2 {
+        font-size: 2em;
+    }
+
+    /* "socials" styling */
     #socials > img {
-        width: 200px;
+        width: 150px;
+        border-radius: 50%;
     }
 
     #socials li {
@@ -332,7 +565,471 @@
         font-size: 1em;
     }
 
+    /* "text-about" styling */
     #text-about {
-        font-size: 1.2em;
+        font-size: 1em;
+        width: 100%;
+        margin: auto;
+        padding-left: 0px;
+    }
+
+    /* "abilities" section styling */
+    #abilities > h2, #abilities-en  > h2 {
+        font-size: 2em;
+    }
+
+    /* "Python" styling */
+    #python {
+        width: 420px;
+        padding: 5px;
+    }
+
+    #python > img {
+        width: 45px;
+        padding: 15px 0px 10px 13px;
+    }
+    
+    #python > p {
+        font-size: 0.8em;
+    }
+
+    /* "html-css" styling */
+    #html-css {
+        width: 420px;
+        padding: 5px;
+    }
+    
+    #html-css > p {
+        font-size: 0.8em;
+    }
+    
+    #html-css > img {
+        width: 74px;
+        padding: 12px 15px 10px 5px;
+    }
+
+    /* "js" styling */
+    #js {
+        width: 420px;
+        padding: 5px;
+    }
+
+    #js > img {
+        width: 75px;
+        padding: 22px 12px 22px 15px;
+    }
+    
+    #js > p {
+        font-size: 0.8em;
+    }
+
+    /* "projects" section styling */
+    #projects > h2, #projects-en > h2 {
+        font-size: 2em;
+    }
+
+    /* "Node-Login" styling */
+    #node-login {
+        display: block;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    #node-login > h3 {
+        text-align: center;
+        margin: 0px auto 8px auto;
+        font-size: 1.5em;
+    }
+
+    #node-login > p {
+        text-align: center;
+        width: 90%;
+        margin: 0px auto 18px auto;
+        font-size: 0.8em;
+    }
+
+    /* "Pomodoro-Web" styling */
+    #pomodoro-web {
+        display: block;
+        max-width: 100%;
+        margin: 30px auto;
+    }
+    
+    #pomodoro-web > h3 {
+        text-align: center;
+        margin: 0px auto 8px auto;
+        font-size: 1.5em;
+    }
+    
+    #pomodoro-web > p {
+        text-align: center;
+        margin: 0px auto 18px auto;
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    #pomodoro-web > img.project-img {
+        position: static;
+        width: 300px;
+    }
+
+    /* "To-do List" styling */
+    #todo-list {
+        display: block;
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    #todo-list > h3 {
+        text-align: center;
+        margin: 0px auto 8px auto;
+        font-size: 1.5em;
+    }
+
+    #todo-list > p {
+        text-align: center;
+        margin: 0px auto 18px auto;
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    #todo-list > img.project-img {
+        width: 300px;
+    }
+}
+
+
+/* Mobile 2 Website */
+@media screen and (min-width: 520px) and (max-width: 578px) {
+    /* nav styling */
+    nav > ul > li {
+        font-size: 1em;
+    }
+
+    nav img {
+        width: 20px;
+    }
+
+    /* h1 styling */
+    h1 {
+        font-size: 2.5em;
+    }
+
+    /* "about-me" section styling */
+    #about-me > h2, #about-me-en > h2 {
+        font-size: 2em;
+    }
+
+    /* "socials" styling */
+    #socials > img {
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    #socials li {
+        padding: 5px 0px;
+        font-size: 1em;
+    }
+
+    /* "text-about" styling */
+    #text-about {
+        font-size: 1em;
+        width: 100%;
+        margin: auto;
+        padding-left: 0px;
+    }
+
+    /* "abilities" section styling */
+    #abilities > h2, #abilities-en  > h2 {
+        font-size: 2em;
+    }
+
+    /* "Python" styling */
+    #python {
+        width: 420px;
+        padding: 5px;
+    }
+
+    #python > img {
+        width: 45px;
+        padding: 15px 0px 10px 13px;
+    }
+    
+    #python > p {
+        font-size: 0.8em;
+    }
+
+    /* "html-css" styling */
+    #html-css {
+        width: 420px;
+        padding: 5px;
+    }
+    
+    #html-css > p {
+        font-size: 0.8em;
+    }
+    
+    #html-css > img {
+        width: 74px;
+        padding: 12px 15px 10px 5px;
+    }
+
+    /* "js" styling */
+    #js {
+        width: 420px;
+        padding: 5px;
+    }
+
+    #js > img {
+        width: 75px;
+        padding: 22px 12px 22px 15px;
+    }
+    
+    #js > p {
+        font-size: 0.8em;
+    }
+
+    /* "projects" section styling */
+    #projects > h2, #projects-en > h2 {
+        font-size: 2em;
+    }
+
+    /* "Node-Login" styling */
+    #node-login {
+        display: block;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    #node-login > h3 {
+        text-align: center;
+        margin: 0px auto 8px auto;
+        font-size: 1.5em;
+    }
+
+    #node-login > p {
+        text-align: center;
+        width: 90%;
+        margin: 0px auto 18px auto;
+        font-size: 0.8em;
+    }
+
+    /* "Pomodoro-Web" styling */
+    #pomodoro-web {
+        display: block;
+        max-width: 100%;
+        margin: 30px auto;
+    }
+    
+    #pomodoro-web > h3 {
+        text-align: center;
+        margin: 0px auto 8px auto;
+        font-size: 1.5em;
+    }
+    
+    #pomodoro-web > p {
+        text-align: center;
+        margin: 0px auto 18px auto;
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    #pomodoro-web > img.project-img {
+        position: static;
+        width: 300px;
+    }
+
+    /* "To-do List" styling */
+    #todo-list {
+        display: block;
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    #todo-list > h3 {
+        text-align: center;
+        margin: 0px auto 8px auto;
+        font-size: 1.5em;
+    }
+
+    #todo-list > p {
+        text-align: center;
+        margin: 0px auto 18px auto;
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    #todo-list > img.project-img {
+        width: 300px;
+    }
+}
+
+
+/* Mobile Website */
+@media screen and (min-width: 1px) and (max-width: 520px) {
+    /* nav styling */
+    nav > ul {
+        padding: 9px;
+    }
+
+    nav > ul > li {
+        font-size: 0.8em;
+    }
+
+    nav img {
+        width: 20px;
+    }
+
+    /* h1 styling */
+    h1 {
+        font-size: 2.5em;
+    }
+
+    /* "about-me" section styling */
+    #about-me > h2, #about-me-en > h2 {
+        font-size: 1.5em;
+    }
+    
+    /* "socials" styling */
+    #socials > img {
+        width: 135px;
+        border-radius: 50%;
+    }
+
+    #socials li {
+        padding: 3px 0px;
+        font-size: 0.7em;
+    }
+
+    /* "text-about" styling */
+    #text-about {
+        font-size: 0.8em;
+        width: 100%;
+        margin: auto;
+        padding-left: 0px;
+    }
+
+    /* "abilities" section styling */
+    #abilities > h2, #abilities-en  > h2 {
+        font-size: 1.5em;
+    }
+
+    /* "Python" styling */
+    #python {
+        width: 300px;
+        padding: 10px;
+    }
+
+    #python > img {
+        display: none;
+    }
+    
+    #python > p {
+        font-size: 0.8em;
+        padding-left: 15px;
+    }
+
+    /* "html-css" styling */
+    #html-css {
+        width: 300px;
+        padding: 10px;
+    }
+    
+    #html-css > p {
+        font-size: 0.8em;
+        padding-right: 15px;
+    }
+    
+    #html-css > img {
+        display: none;
+    }
+
+    /* "js" styling */
+    #js {
+        width: 300px;
+        padding: 10px;
+    }
+
+    #js > img {
+        display: none;
+    }
+    
+    #js > p {
+        font-size: 0.8em;
+        padding-left: 15px;
+    }
+
+    /* "projects" section styling */
+    #projects > h2, #projects-en > h2 {
+        font-size: 1.5em;
+    }
+
+    /* "Node-Login" styling */
+    #node-login {
+        display: block;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    #node-login > h3 {
+        text-align: center;
+        margin: 0px auto 8px auto;
+        font-size: 1.5em;
+    }
+
+    #node-login > p {
+        text-align: center;
+        width: 90%;
+        margin: 0px auto 18px auto;
+        font-size: 0.8em;
+    }
+
+    /* "Pomodoro-Web" styling */
+    #pomodoro-web {
+        display: block;
+        max-width: 100%;
+        margin: 30px auto;
+    }
+    
+    #pomodoro-web > h3 {
+        text-align: center;
+        margin: 0px auto 8px auto;
+        font-size: 1.5em;
+    }
+    
+    #pomodoro-web > p {
+        text-align: center;
+        margin: 0px auto 18px auto;
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    #pomodoro-web > img.project-img {
+        position: static;
+        width: 300px;
+    }
+
+    /* "To-do List" styling */
+    #todo-list {
+        display: block;
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    #todo-list > h3 {
+        text-align: center;
+        margin: 0px auto 8px auto;
+        font-size: 1.5em;
+    }
+
+    #todo-list > p {
+        text-align: center;
+        margin: 0px auto 18px auto;
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    #todo-list > img.project-img {
+        width: 300px;
     }
 }
