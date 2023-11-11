@@ -40,12 +40,6 @@ div#en {
 
 
 /* Header section styling */
-header {
-    background-image: linear-gradient(to right bottom, var(--color1), var(--color2), var(--color3));
-    height: 100vh;
-    margin: auto;
-}
-
 /* nav styling */
 nav {
     background-color: var(--color4);
@@ -102,13 +96,15 @@ nav img {
 
 /* h1 styling */
 h1 {
+    background-image: linear-gradient(to right bottom, var(--color1), var(--color2), var(--color3));
     font-family: var(--fontTitle);
     color: rgb(224, 222, 222);
-    text-align: center;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     font-size: 8em;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 
@@ -190,7 +186,6 @@ h1 {
     text-align: center;
     margin-bottom: 30px;
     color: white;
-    align-items: center;
 }
 
 /* "Python" styling */
@@ -260,7 +255,7 @@ h1 {
 /* "projects" section styling */
 #projects, #projects-en {
     text-align: center;
-    margin: 50px;
+    margin: 50px auto;
 }
 
 #projects > h2, #projects-en > h2 {

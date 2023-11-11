@@ -1,1 +1,338 @@
 @charset "UTF-8";
+
+@media screen and (max-width: 578px) {
+    /* nav styling */
+    nav > ul > li {
+        font-size: 1em;
+    }
+
+    nav img {
+        width: 20px;
+    }
+
+    /* h1 styling */
+    h1 {
+        font-size: 2.5em;
+    }
+
+    /* "about-me" section styling */
+    /* "socials" styling */
+    #socials > img {
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    #socials li {
+        padding: 5px 0px;
+        font-size: 0.9em;
+    }
+
+    /* "text-about" styling */
+    #text-about {
+        display: block;
+        font-size: 1em;
+    }
+
+    /* "Python" styling */
+    #python {
+        width: 420px;
+        padding: 5px;
+    }
+
+    #python > img {
+        width: 45px;
+        padding: 15px 0px 10px 13px;
+    }
+    
+    #python > p {
+        font-size: 0.8em;
+    }
+
+    /* "html-css" styling */
+    #html-css {
+        width: 420px;
+        padding: 5px;
+    }
+    
+    #html-css > p {
+        font-size: 0.8em;
+    }
+    
+    #html-css > img {
+        width: 74px;
+        padding: 15px 15px 10px 5px;
+    }
+
+    /* "js" styling */
+    #js {
+        width: 420px;
+        padding: 5px;
+    }
+
+    #js > img {
+        width: 75px;
+        padding: 22px 12px 22px 12px;
+    }
+    
+    #js > p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 578px) and (max-width: 660px) {
+
+    /* h1 styling */
+    h1 {
+        font-size: 5em;
+    }
+
+    /* "about-me" section styling */
+    /* "socials" styling */
+    #socials > img {
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    #socials li {
+        padding: 5px 0px;
+        font-size: 0.9em;
+    }
+
+    /* "text-about" styling */
+    #text-about {
+        display: block;
+        font-size: 1em;
+    }
+
+    /* "Python" styling */
+    #python {
+        width: 420px;
+        padding: 5px;
+    }
+
+    #python > img {
+        width: 45px;
+        padding: 15px 0px 10px 13px;
+    }
+    
+    #python > p {
+        font-size: 0.8em;
+    }
+
+    /* "html-css" styling */
+    #html-css {
+        width: 420px;
+        padding: 5px;
+    }
+    
+    #html-css > p {
+        font-size: 0.8em;
+    }
+    
+    #html-css > img {
+        width: 74px;
+        padding: 15px 15px 10px 5px;
+    }
+
+    /* "js" styling */
+    #js {
+        width: 420px;
+        padding: 5px;
+    }
+
+    #js > img {
+        width: 75px;
+        padding: 22px 12px 22px 12px;
+    }
+    
+    #js > p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 660px) and (max-width: 864px) {
+
+    /* h1 styling */
+    h1 {
+        font-size: 5em;
+    }
+
+    /* "Python" styling */
+    #python {
+        width: 600px;
+        padding: 5px;
+    }
+    
+    #python > img {
+        width: 50px;
+        padding: 15px 0px 10px 15px;
+    }
+    
+    #python > p {
+        font-size: 0.9em;
+    }
+
+    /* "html-css" styling */
+    #html-css {
+        width: 600px;
+        padding: 5px;
+    }
+    
+    #html-css > p {
+        font-size: 0.9em;
+    }
+    
+    #html-css > img {
+        width: 79px;
+        padding: 15px 15px 10px 5px;
+    }
+
+    /* "js" styling */
+    #js {
+        width: 600px;
+        padding: 5px;
+    }
+
+    #js > img {
+        width: 79px;
+        padding: 20px 10px 20px 25px;
+    }
+    
+    #js > p {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 864px) and (max-width: 1000px) {
+
+    /* h1 styling */
+    h1 {
+        font-size: 5em;
+    }
+
+    /* "Python" styling */
+    #python > img {
+        width: 70px;
+        padding: 20px 0px 10px 20px;
+    }
+    
+    #python > p {
+        font-size: 1em;
+    }
+
+    /* "html-css" styling */
+    #html-css > p {
+        font-size: 1em;
+    }
+    
+    #html-css > img {
+        width: 79px;
+        padding: 15px 20px 15px 2px;
+    }
+
+    /* "js" styling */
+    #js > img {
+        width: 79px;
+        padding: 20px 10px 20px 25px;
+    }
+    
+    #js > p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+
+    /* "about-me" section styling */
+    /* "socials" styling */
+    #socials > img {
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    #socials li {
+        padding: 5px 0px;
+        font-size: 0.9em;
+    }
+
+    /* "text-about" styling */
+    #text-about {
+        display: block;
+        font-size: 1em;
+    }
+
+    /* "Node-Login" styling */
+    #node-login {
+        display: block;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    #node-login > h3 {
+        text-align: center;
+        margin: 0px auto 8px auto;
+    }
+
+    #node-login > p {
+        text-align: center;
+        margin: 0px auto 18px auto;
+    }
+
+    /* "Pomodoro-Web" styling */
+    #pomodoro-web {
+        display: block;
+        max-width: 100%;
+        margin: 30px auto;
+    }
+    
+    #pomodoro-web > h3 {
+        text-align: center;
+        margin: 0px auto 8px auto;
+    }
+    
+    #pomodoro-web > p {
+        text-align: center;
+        margin: 0px auto 18px auto;
+    }
+
+    #pomodoro-web > img.project-img {
+        position: static;
+        width: 300px;
+    }
+
+    /* "To-do List" styling */
+    #todo-list {
+        display: block;
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    #todo-list > h3 {
+        text-align: center;
+        margin: 0px auto 8px auto;
+    }
+
+    #todo-list > p {
+        text-align: center;
+        margin: 0px auto 18px auto;
+    }
+
+    #todo-list > img.project-img {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1120px) and (max-width: 1550px) {
+    #socials > img {
+        width: 200px;
+    }
+
+    #socials li {
+        padding: 5px 0px;
+        font-size: 1em;
+    }
+
+    #text-about {
+        font-size: 1.2em;
+    }
+}
