@@ -308,6 +308,10 @@ h1 {
     background-color: var(--color4);
 }
 
+.node-btn {
+    cursor: pointer;
+}
+
 #node-login > img.project-img {
     width: 290px;
     grid-row: 1 / 3;
